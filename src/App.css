@@ -1,38 +1,115 @@
-.App {
+.navBar {
+  background-color: #004274;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 15px;
+  background-color: #d3d3d3;
+}
+
+.bg-body {
+  background-color: #49ad0b !important;
+}
+
+.candidate-container {
+  width: 100%;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-content {
+  position: absolute;
+  left: -5%;
+  top: 25%;
+  width: 120px;
+  height: auto;
+  /* border: 8px solid   black !important; */
+}
+
+.candidate-img {
+  width: 75px;
+  height: 75px;
+}
+
+/* .candidate-box{
+  position: absolute;
+} */
+.table-container {
+  overflow-x: scroll;
+  border: 5px solid #004274;
+}
+
+.candidate-table {
+  width: 100%;
+  border-radius: 10px !important;
+}
+
+
+tr>th,
+td {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.candidate-table>thead>tr {
+  background-color: #004274;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table-padding>th {
+  padding: 20px 0;
+  color: aliceblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.table-padding>td {
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.candidate-table>tbody>tr:hover {
+  background: rgb(227, 236, 239);
+  outline: 3px solid rgb(130, 130, 241);
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.candidate-table th:nth-child(2),
+.candidate-table td:nth-child(2) {
+  width: 20%; /* Adjust the width as needed */
+}
+
+.candidate-table th:nth-child(3),
+.candidate-table td:nth-child(3) {
+  width:10%; /* Adjust the width as needed */
+}
+
+
+.bg-saffron {
+  background-color: #ff671f;
+} 
+
+.bg-green {
+  background-color: #046a3b;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-navy {
+  background-color: #06038D;
+}
+
+.text-navy {
+  color: #06038D;
+}
+
+
+.edit-table > tbody > tr > td{
+  border: 3px solid #000;
+  padding: 10px;
+}
+
+.edit-candidate-img{
+  width: 150px;
+  height: 150px;
 }
