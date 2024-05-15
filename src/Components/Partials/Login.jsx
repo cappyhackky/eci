@@ -40,9 +40,6 @@ const Login = () => {
                 <div id="passwordLoginVerify" className="invalid-feedback"></div>
               </div>
             </div>
-            <div className="mt-2">
-              <a href="/signup" className='text-decoration-none link-light'>New User? Register!</a>
-            </div>
             <div className="d-flex flex-column justify-content-center text-center mt-2">
               <button type="button" className="btn border btn-light px-3 my-2 fs-6" onClick={login}>Log In</button>
             </div>
